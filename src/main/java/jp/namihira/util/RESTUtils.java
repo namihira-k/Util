@@ -4,7 +4,6 @@
 
 package jp.namihira.util;
 
-
 /**
  *
  * REST関係のユーティリティクラス
