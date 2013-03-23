@@ -28,7 +28,6 @@ public class RESTUtilsTest
         final String ID = "1";
         final String ID_2 = "2";
 
-
         //action
         String result = RESTUtils.replaceURL(url[0] + url[1] + url[2] + url[3], ID, ID_2);
 
@@ -36,5 +35,35 @@ public class RESTUtilsTest
         assertEquals(url[0] + ID + url[2] + ID_2, result);
     }
 
+    /**
+     * nullチェック
+     */
+    @Test
+    public void testReplaceURL_URL_Null(){
+        //prepare
+        final String ID = "1";
+        final String ID_2 = "2";
+
+        //action
+        String result = RESTUtils.replaceURL(null, ID, ID_2);
+
+        //check
+        assertEquals("", result);
+    }
+
+    /**
+     * nullチェック
+     */
+    @Test
+    public void testReplaceURL_Id_Null(){
+        //prepare
+        String url = "http://yahoo.co.jp";
+
+        //action
+        String result = RESTUtils.replaceURL(url, null);
+
+        //check
+        assertEquals(url, result);
+    }
 
 }

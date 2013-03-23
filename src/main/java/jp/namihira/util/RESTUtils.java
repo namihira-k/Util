@@ -23,6 +23,15 @@ public class RESTUtils
      * @param ids
      */
     public static String replaceURL(final String url, String... ids) {
+        if (url == null || url.equals("")) {
+            return "";
+        }
+
+        if (ids == null || ids.length == 0) {
+            return url;
+        }
+
+
         final String regex = "[{][^}]+[}]";
         String tmp = url;
 
