@@ -17,11 +17,11 @@ public class ReflectionUtilsTest
 	 * getType()のテスト
 	 */
 	@Test
-	public void testGetTypeWrapperInt() {
+	public void testGetTypeInt() {
 		//prepare
 		//nothing
 
-        //action
+		//action
 		Class<?> clazz = null;
 		try {
 			clazz = ReflectionUtils.getType("int");
@@ -37,7 +37,7 @@ public class ReflectionUtilsTest
 	 * getType()のテスト
 	 */
 	@Test
-	public void testGetTypeWrapperInteger() {
+	public void testGetTypeInteger() {
 		//prepare
 		//nothing
 
