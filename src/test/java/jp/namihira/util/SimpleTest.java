@@ -30,7 +30,7 @@ public class SimpleTest {
 		//check
 		assertEquals("a", strs[0]);
 		assertEquals("bb", strs[1]);
-		assertEquals("cc", strs[2]);
+		assertEquals("ccc", strs[2]);
 	}
 
 	class LengthComparator implements Comparator<String> {
