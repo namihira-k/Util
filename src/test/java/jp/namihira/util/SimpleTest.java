@@ -16,6 +16,23 @@ import org.junit.Test;
  */
 public class SimpleTest {
 
+    /**
+     * for test lambda
+     */
+    @Test
+    public void testLambda(){
+        //prepare
+        String[] strs = new String[]{"a", "ccc", "bb"};
+
+        //action
+        Arrays.sort(strs, (first, second) -> Integer.compare(first.length(), second.length()));
+
+        //check
+        assertEquals("a", strs[0]);
+        assertEquals("bb", strs[1]);
+        assertEquals("ccc", strs[2]);
+    }
+
 	/**
 	 * for test Arrays.sorts
 	 */
